@@ -175,6 +175,7 @@ namespace NuGet.Commands
                 sharedCache,
                 restoreArgs.CacheContext,
                 clientPolicyContext,
+                packageNamespaces: null,
                 restoreArgs.Log)
             {
                 // Set properties from the restore metadata
