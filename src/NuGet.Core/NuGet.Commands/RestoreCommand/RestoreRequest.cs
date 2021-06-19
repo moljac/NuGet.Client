@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using NuGet.Common;
+using NuGet.Configuration;
 using NuGet.Frameworks;
 using NuGet.Packaging;
 using NuGet.Packaging.PackageExtraction;
@@ -27,6 +28,7 @@ namespace NuGet.Commands
             RestoreCommandProviders dependencyProviders,
             SourceCacheContext cacheContext,
             ClientPolicyContext clientPolicyContext,
+            PackageNamespacesConfiguration packageNamespaces,
             ILogger log)
         {
 
